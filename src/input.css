@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    @apply w-48 h-64 shadow-md rounded-xl overflow-hidden flex-none
+}
+.card_img {
+    @apply w-full h-3/5 bg-cover
+}
+.card_textI {
+    @apply w-full h-2/5 px-4 py-2 bg-secondary text-white
+}
+.card_textP {
+    @apply w-full h-2/5 px-4 py-2 bg-white text-terciary
+}
