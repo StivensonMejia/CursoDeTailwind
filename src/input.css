@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card {
-    @apply w-48 h-64 shadow-md rounded-xl overflow-hidden flex-none
+    @apply w-48 h-64 shadow-md rounded-xl overflow-hidden flex-none transition-all hover:-translate-y-4 hover:shadow-xl
 }
 .card_img {
     @apply w-full h-3/5 bg-cover
@@ -13,4 +13,13 @@
 }
 .card_textP {
     @apply w-full h-2/5 px-4 py-2 bg-white text-terciary
+}
+.recomendCard {
+    @apply w-full h-96 bg-cover rounded-xl text-white
+}
+.recomendCardT {
+    @apply text-2xl font-bold px-8 pt-16 pb-1
+}
+.recomendCardP {
+    @apply text-sm px-8 mr-24 
 }

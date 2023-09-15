@@ -11,7 +11,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body class="font-Montcerrat">
   <nav>
 
   </nav>
@@ -28,8 +28,8 @@
           <img src="./img/sanFrancisco.jpg" alt="sanFrancisco">
         </div>
         <div class="w-full h-full flex justify-around items-center flex-col absolute top-0 left-0">
-          <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search">
-          <button class="w-36 rounded-full text-xl font-semibold p-4 text-primary bg-white">
+          <input class="w-1/2 outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search">
+          <button class="w-40 rounded-full text-lg font-semibold p-4 text-primary bg-white transition-all duration-300 ease-in-out hover:bg-primary hover:text-white hover:scale-110">
               Explorar
           </button>
         </div>
@@ -37,7 +37,7 @@
     </div>
     <div id="recomendados" class="p-6">
       <p class="text-3xl font-semibold text-primary">Recomendados</p>
-      <div class="w-auto h-72 items-center mt-6 overflow-x-scroll flex gap-3">
+      <div class="w-auto h-72 items-center mt-6 overflow-x-scroll overflow-y-hidden flex gap-3">
         <div class="card">
           <div class="card_img bg-bali"></div>
           <div class="card_textI">
@@ -125,9 +125,40 @@
       </div>
 
     </div>
-      
-    <div id="rentas_destacadas"></div>
-
+    <div id="rentas_destacadas" class="w-full h-auto p-6">
+      <p class="text-3xl text-primary font-semibold pb-10">Rentas Destacadas</p>
+      <div class="w-full h-auto flex flex-col space-y-6 items-center justify-center">
+        <div class="recomendCard bg-chicago">
+          <p class="recomendCardT">Chicago</p>
+          <p class="recomendCardP">2 rooms, bathroom and kitchen</p>
+        </div>
+        <div class="recomendCard bg-LA">
+          <p class="recomendCardT">Los Angeles</p>
+          <p class="recomendCardP">4 roms, 3 bathrooms, kitchen and private pool</p>
+        </div>
+        <div class="recomendCard bg-miami">
+          <p class="recomendCardT">Miami</p>
+          <p class="recomendCardP">3 rooms, 2 bathrooms, kitchen and amazing sea view</p>
+        </div>
+        <div class="recomendCard bg-bali">
+          <p class="recomendCardT">Bali</p>
+          <p class="recomendCardP">2 rooms, 2 bathrooms, kitchen and private pool</p>
+        </div>
+      </div>
+    </div>
+    <div id="faqs" class="w-full h-auto">
+      <div class="w-full h-full px-6">
+        <p class="text-3xl text-primary font-semibold pb-6 pt-8">FAQS</p>
+        <div>
+          <p class="text-xl font-medium text-primary">Payment Methods</p>
+          <p class="text-sm pt-1 pb-4">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div>
+        <div>
+          <p class="text-xl font-medium text-primary">Cancellation Policy</p>
+          <p class="text-sm pt-1 pb-4">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
