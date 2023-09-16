@@ -2,24 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.titles {
+    @apply text-3xl text-primary font-semibold
+}
 .card {
-    @apply w-48 h-64 shadow-md rounded-xl overflow-hidden flex-none transition-all hover:-translate-y-4 hover:shadow-xl
+    @apply w-48 h-72 shadow-md rounded-xl overflow-hidden flex-none transition-all hover:-translate-y-4 hover:shadow-xl
 }
 .card_img {
     @apply w-full h-3/5 bg-cover
 }
 .card_textI {
-    @apply w-full h-2/5 px-4 py-2 bg-secondary text-white
+    @apply w-full h-2/5 px-4 py-2 bg-primary text-white
 }
 .card_textP {
     @apply w-full h-2/5 px-4 py-2 bg-white text-terciary
 }
 .recomendCard {
-    @apply w-full h-96 bg-cover rounded-xl text-white
+    @apply w-full h-72 bg-cover rounded-xl text-white bg-center
 }
 .recomendCardT {
-    @apply text-2xl font-bold px-8 pt-16 pb-1
+    @apply text-2xl font-bold px-8 pt-16 pb-1 
 }
 .recomendCardP {
     @apply text-sm px-8 mr-24 
+}
+
+.faqs_subTitle {
+    @apply text-xl font-medium text-primary
+}
+.faqs_text {
+    @apply text-sm pt-1 pb-4
+}
+.border-nav {
+    @apply border-b-2 border-transparent hover:border-red-500 transition-all ease-in-out
 }

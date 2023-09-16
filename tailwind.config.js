@@ -22,16 +22,16 @@ module.exports = {
       backgroundColor: theme => ({
         ...theme('colors'),
         "primary": "#CC2D4A",
-        "secondary": "#8FA206",
+        "secondary": "#8b5f4d",
         "terciary": "#61AEC9"
       }),
       textColor: {
         "primary": "#CC2D4A",
-        "secondary": "#8FA206",
+        "secondary": "#8b5f4d",
         "terciary": "#61AEC9"
       },
       fontFamily: {
-        Montcerrat: ["Montcerrat","sans-serif"]
+        Montcerrat: ['Montserrat','sans-serif']
       }
     },
   },
