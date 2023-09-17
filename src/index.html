@@ -11,8 +11,8 @@
 
     <title>Document</title>
 </head>
-<body class="dark:bg-gray-900">
-  <nav class="hidden w-full h-14 bg-white lg:flex px-8 justify-between items-center lg:fixed z-10 dark:bg-gray-900">
+<body class="dark:bg-gray-900 transition-all ease-in-out duration-300">
+  <nav class="hidden w-full h-14 bg-white lg:flex px-8 justify-between items-center lg:fixed z-10 dark:bg-gray-900 transition-all ease-in-out duration-300">
     <div class="w-auto h-auto">
       <p class="text-xl textColor-primary font-black">Platzi Travel</p>
     </div>
@@ -151,25 +151,34 @@
       </div>
 
     </div>
-    <div id="rentas_destacadas" class="w-full h-auto p-6 bg-gray-50 lg:px-24 py-8 lg:py-16 dark:bg-gray-800">
+    <div id="rentas_destacadas" class="w-full h-auto p-6 bg-gray-50 lg:px-24 py-8 lg:py-16 dark:bg-gray-800 transition-all ease-in-out duration-300">
       <p class="titles pb-10">Rentas Destacadas</p>
       <div class="w-full h-auto flex flex-col space-y-6 items-center justify-center lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-5 lg:space-y-0">
-        <div class="recomendCard bg-chicago">
-          <p class="recomendCardT">Chicago</p>
-          <p class="recomendCardP">2 rooms, bathroom and kitchen</p>
+        <div class="overflow-hidden rounded-xl">
+          <div class="recomendCard bg-chicago">
+            <p class="recomendCardT">Chicago</p>
+            <p class="recomendCardP">2 rooms, bathroom and kitchen</p>
+          </div>
         </div>
-        <div class="recomendCard bg-LA lg:col-span-1 lg:row-span-3 lg:h-full">
-          <p class="recomendCardT">Los Angeles</p>
-          <p class="recomendCardP">4 roms, 3 bathrooms, kitchen and private pool</p>
+        <div class="overflow-hidden rounded-xl lg:col-span-1 lg:row-span-3 lg:h-full">
+          <div class="recomendCard bg-LA lg:h-full">
+            <p class="recomendCardT">Los Angeles</p>
+            <p class="recomendCardP">4 roms, 3 bathrooms, kitchen and private pool</p>
+          </div>
         </div>
-        <div class="recomendCard bg-miami">
-          <p class="recomendCardT">Miami</p>
-          <p class="recomendCardP">3 rooms, 2 bathrooms, kitchen and amazing sea view</p>
+        <div class="overflow-hidden rounded-xl">
+          <div class="recomendCard bg-miami">
+            <p class="recomendCardT">Miami</p>
+            <p class="recomendCardP">3 rooms, 2 bathrooms, kitchen and amazing sea view</p>
+          </div>
         </div>
-        <div class="recomendCard bg-bali">
-          <p class="recomendCardT">Bali</p>
-          <p class="recomendCardP">2 rooms, 2 bathrooms, kitchen and private pool</p>
+        <div class="overflow-hidden rounded-xl">
+          <div class="recomendCard bg-bali">
+            <p class="recomendCardT">Bali</p>
+            <p class="recomendCardP">2 rooms, 2 bathrooms, kitchen and private pool</p>
+          </div>
         </div>
+        
       </div>
     </div>
     <div id="faqs" class="w-full h-auto py-8 lg:py-16">
@@ -200,7 +209,7 @@
 
   </section>
 
-  <footer id="footer" class="w-full h-auto bg-gray-50 p-6 space-y-2 pb-20 lg:px-24  dark:bg-gray-800">
+  <footer id="footer" class="w-full h-auto bg-gray-50 p-6 space-y-2 pb-20 lg:px-24  dark:bg-gray-800 transition-all ease-in-out duration-300">
     <p class="text-xl text-gray-400 font-bolder">About US</p>
     <p class="text-sm text-gray-400">Investors</p>
     <p class="text-sm text-gray-400">Jobs</p>
@@ -210,7 +219,7 @@
     <p class="text-sm text-gray-400">Follow Us</p>
   </footer>
 
-  <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-gray-900">
+  <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-gray-900 transition-all ease-in-out duration-300">
     <a href="#home">
       <svg width="30" height="30" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="fill-current text-gray-300" d="M8.70704 0.293031C8.51951 0.105559 8.26521 0.000244141 8.00004 0.000244141C7.73488 0.000244141 7.48057 0.105559 7.29304 0.293031L0.293041 7.29303C0.110883 7.48163 0.0100885 7.73423 0.0123669 7.99643C0.0146453 8.25863 0.119814 8.50944 0.305222 8.69485C0.490631 8.88026 0.741443 8.98543 1.00364 8.9877C1.26584 8.98998 1.51844 8.88919 1.70704 8.70703L2.00004 8.41403V15C2.00004 15.2652 2.1054 15.5196 2.29293 15.7071C2.48047 15.8947 2.73482 16 3.00004 16H5.00004C5.26526 16 5.51961 15.8947 5.70715 15.7071C5.89468 15.5196 6.00004 15.2652 6.00004 15V13C6.00004 12.7348 6.1054 12.4805 6.29293 12.2929C6.48047 12.1054 6.73482 12 7.00004 12H9.00004C9.26526 12 9.51961 12.1054 9.70715 12.2929C9.89468 12.4805 10 12.7348 10 13V15C10 15.2652 10.1054 15.5196 10.2929 15.7071C10.4805 15.8947 10.7348 16 11 16H13C13.2653 16 13.5196 15.8947 13.7071 15.7071C13.8947 15.5196 14 15.2652 14 15V8.41403L14.293 8.70703C14.4816 8.88919 14.7342 8.98998 14.9964 8.9877C15.2586 8.98543 15.5095 8.88026 15.6949 8.69485C15.8803 8.50944 15.9854 8.25863 15.9877 7.99643C15.99 7.73423 15.8892 7.48163 15.707 7.29303L8.70704 0.293031Z" fill="#3F3F46"/>

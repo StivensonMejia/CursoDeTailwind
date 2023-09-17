@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .scroll-bar::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
 }
 .scroll-bar::-webkit-scrollbar-thumb {
     background-color: #CC2D4A;
@@ -32,7 +32,7 @@
     @apply w-full h-2/5 px-4 py-2 bg-white text-terciary
 }
 .recomendCard {
-    @apply w-full h-72 bg-cover rounded-xl text-white bg-center
+    @apply w-full h-72 bg-cover rounded-xl text-white bg-center transition-all ease-in-out duration-300 hover:scale-105
 }
 .recomendCardT {
     @apply text-2xl font-bold px-8 pt-16 pb-1 
