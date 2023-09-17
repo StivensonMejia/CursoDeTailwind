@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.scroll-bar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color: #CC2D4A;
+}
+.scroll-bar::-webkit-scrollbar-track {
+    background: white;
+}
 
 .titles {
-    @apply text-3xl text-primary font-semibold
+    @apply text-3xl text-primary font-semibold dark:text-white
+}
+.textColor-primary {
+    @apply text-primary dark:text-white
 }
 .card {
     @apply w-48 h-72 shadow-md rounded-xl overflow-hidden flex-none transition-all hover:-translate-y-4 hover:shadow-xl
@@ -29,10 +42,10 @@
 }
 
 .faqs_subTitle {
-    @apply text-xl font-medium text-primary
+    @apply text-xl font-medium text-primary dark:text-white
 }
 .faqs_text {
-    @apply text-sm pt-1 pb-4
+    @apply text-sm pt-1 pb-4 dark:text-gray-500
 }
 .border-nav {
     @apply border-b-2 border-transparent hover:border-red-500 transition-all ease-in-out
