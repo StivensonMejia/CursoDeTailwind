@@ -1,2 +1,2 @@
 # CursoDeTailwind
-link a la web: https://github.com/StivensonMejia/CursoDeTailwind
+link a la web: https://stivensonmejia.github.io/CursoDeTailwind/src/index.html
